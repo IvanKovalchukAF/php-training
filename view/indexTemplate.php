@@ -1,9 +1,7 @@
-<form method="post" action="index.php">
-    <input type="text" placeholder="name" name="name">
-    <br>
-    <input type="text" placeholder="name" name="description">
-    <br>
-    <input type="date" placeholder="created_at" name="created_at">
-    <br>
-    <input type="submit">
-</form>
+<?php
+foreach ($rows as $el) {
+
+    echo $el['name'] . ' <a href="edit.php?id=' . $el['id'] . '">Edit</a>' . '<a href="delete.php?id=' . $el['id'] . '">   del</a><br>';
+
+}
+

@@ -5,4 +5,4 @@ foreach ($rows as $el) {
 
 }
 
-
+?><br><a href="create.php">create new post</a> <?php
